@@ -1,0 +1,35 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rails
+  - rubocop-rake
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7.3
+  Exclude:
+    - '.git/**/*'
+    - 'coverage/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'public/**/*'
+    - 'bin/**/*'
+Metrics/BlockLength:
+  AllowedMethods: [ 'describe' ]
+  Max: 300
+
+Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/Output:
+  Enabled: false
+
+
